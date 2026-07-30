@@ -2588,7 +2588,7 @@
         desc: "ダンジョンモードでの基本攻撃力(ATK)をアップ",
         getStatText: (lvl) => `ATK ${getStatValue('weapon', lvl)}`,
         getNextText: (lvl) => `+${getStatDelta('weapon', lvl)} ATK`,
-        getCost: (lvl) => Math.floor(15 * Math.pow(1.3, lvl))
+        getCost: (lvl) => Math.floor(15 * Math.pow(1.1, lvl))
       },
       {
         id: "shield",
@@ -2598,7 +2598,7 @@
         desc: "制限時間を1レベル毎に固定で+1秒延長",
         getStatText: (lvl) => `+${getStatValue('shield', lvl)} 秒延長`,
         getNextText: (lvl) => `+1 秒延長`,
-        getCost: (lvl) => Math.floor(15 * Math.pow(1.35, lvl))
+        getCost: (lvl) => Math.floor(15 * Math.pow(1.3, lvl))
       },
       {
         id: "ring",
@@ -2608,7 +2608,7 @@
         desc: "苦手単語正解時のボーナスPTをUP",
         getStatText: (lvl) => `+${getStatValue('ring', lvl)} PT`,
         getNextText: (lvl) => `+${getStatDelta('ring', lvl)} PT`,
-        getCost: (lvl) => Math.floor(20 * Math.pow(1.3, lvl))
+        getCost: (lvl) => Math.floor(20 * Math.pow(1.2, lvl))
       },
       {
         id: "boots",
