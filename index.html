@@ -2588,7 +2588,7 @@
         desc: "ダンジョンモードでの基本攻撃力(ATK)をアップ",
         getStatText: (lvl) => `ATK ${getStatValue('weapon', lvl)}`,
         getNextText: (lvl) => `+${getStatDelta('weapon', lvl)} ATK`,
-        getCost: (lvl) => Math.floor(15 * Math.pow(1.1, lvl))
+        getCost: (lvl) => Math.floor(15 * Math.pow(1.22, lvl))
       },
       {
         id: "shield",
@@ -2608,7 +2608,7 @@
         desc: "苦手単語正解時のボーナスPTをUP",
         getStatText: (lvl) => `+${getStatValue('ring', lvl)} PT`,
         getNextText: (lvl) => `+${getStatDelta('ring', lvl)} PT`,
-        getCost: (lvl) => Math.floor(20 * Math.pow(1.2, lvl))
+        getCost: (lvl) => Math.floor(20 * Math.pow(1.22, lvl))
       },
       {
         id: "boots",
