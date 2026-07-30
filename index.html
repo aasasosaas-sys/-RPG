@@ -777,7 +777,7 @@
         desc: "苦手単語正解時のボーナスPTをUP",
         getStatText: (lvl) => `+${getStatValue('ring', lvl)} PT`,
         getNextText: (lvl) => `+${getStatDelta('ring', lvl)} PT`,
-        getCost: (lvl) => Math.floor(20 * Math.pow(1.19, lvl))
+        getCost: (lvl) => Math.floor(20 * Math.pow(1.14, lvl))
       },
       {
         id: "boots",
@@ -817,7 +817,7 @@
         desc: "2秒以内の即答(スピード回答)でダメージがさらに増加",
         getStatText: (lvl) => `即答ボーナス +${getStatValue('speed_feather', lvl)}%`,
         getNextText: (lvl) => `+${getStatDelta('speed_feather', lvl)}% 加算`,
-        getCost: (lvl) => Math.floor(80 * Math.pow(1.42, lvl))
+        getCost: (lvl) => Math.floor(80 * Math.pow(1.4, lvl))
       },
       {
         id: "crit_glove",
@@ -827,7 +827,7 @@
         desc: "正解時に一定確率で超強力な会心の一撃(ダメージ2倍)発動",
         getStatText: (lvl) => `会心発生率 ${getStatValue('crit_glove', lvl)}%`,
         getNextText: (lvl) => `+${getStatDelta('crit_glove', lvl)}% 発動率`,
-        getCost: (lvl) => Math.floor(100 * Math.pow(1.45, lvl))
+        getCost: (lvl) => Math.floor(100 * Math.pow(1.4, lvl))
       },
       {
         id: "overkill_crown",
