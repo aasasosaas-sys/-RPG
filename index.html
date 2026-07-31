@@ -2756,10 +2756,10 @@
       { id: 20, name: "創世と終焉の神ゼウス", hp: 600000, icon: "🔱", time: 60, type: "extra", choices: 8 },
 
       // Extra 2 (21 - 30)
-      { id: 21, name: "次元の歪み・スライム", hp: 800000, icon: "🌀", time: 45, type: "extra2", choices: 10 },
-      { id: 22, name: "虚無の剣士", hp: 1000000, icon: "🗡️", time: 45, type: "extra2", choices: 10 },
-      { id: 23, name: "幻影の魔導書", hp: 1300000, icon: "📖", time: 45, type: "extra2", choices: 10 },
-      { id: 24, name: "カオス・フェニックス", hp: 1700000, icon: "🦅", time: 45, type: "extra2", choices: 10 },
+      { id: 21, name: "次元の歪み・スライム", hp: 800000, icon: "🌀", time: 45, type: "extra2", choices: 8 },
+      { id: 22, name: "虚無の剣士", hp: 1000000, icon: "🗡️", time: 45, type: "extra2", choices: 8 },
+      { id: 23, name: "幻影の魔導書", hp: 1300000, icon: "📖", time: 45, type: "extra2", choices: 8 },
+      { id: 24, name: "カオス・フェニックス", hp: 1700000, icon: "🦅", time: 45, type: "extra2", choices: 8 },
       { id: 25, name: "時空の支配者", hp: 2200000, icon: "⏳", time: 45, type: "extra2", choices: 12 },
       { id: 26, name: "星喰いの魔獣", hp: 2800000, icon: "🌌", time: 50, type: "extra2", choices: 12 },
       { id: 27, name: "狂気の機巧神", hp: 3500000, icon: "⚙️", time: 50, type: "extra2", choices: 12 },
@@ -2801,7 +2801,7 @@
         desc: "ダンジョンモードでの基本攻撃力(ATK)をアップ",
         getStatText: (lvl) => `ATK ${getStatValue('weapon', lvl)}`,
         getNextText: (lvl) => `+${getStatDelta('weapon', lvl)} ATK`,
-        getCost: (lvl) => Math.floor(15 * Math.pow(1.3, lvl))
+        getCost: (lvl) => Math.floor(15 * Math.pow(1.19, lvl))
       },
       {
         id: "shield",
@@ -2811,7 +2811,7 @@
         desc: "制限時間を1レベル毎に固定で+1秒延長",
         getStatText: (lvl) => `+${getStatValue('shield', lvl)} 秒延長`,
         getNextText: (lvl) => `+1 秒延長`,
-        getCost: (lvl) => Math.floor(15 * Math.pow(1.35, lvl))
+        getCost: (lvl) => Math.floor(15 * Math.pow(1.3, lvl))
       },
       {
         id: "ring",
@@ -2821,7 +2821,7 @@
         desc: "苦手単語正解時のボーナスPTをUP",
         getStatText: (lvl) => `+${getStatValue('ring', lvl)} PT`,
         getNextText: (lvl) => `+${getStatDelta('ring', lvl)} PT`,
-        getCost: (lvl) => Math.floor(20 * Math.pow(1.3, lvl))
+        getCost: (lvl) => Math.floor(20 * Math.pow(1.21, lvl))
       },
       {
         id: "boots",
@@ -2831,7 +2831,7 @@
         desc: "通常問題正解時の基本獲得PTをUP",
         getStatText: (lvl) => `${getStatValue('boots', lvl)} PT`,
         getNextText: (lvl) => `+${getStatDelta('boots', lvl)} PT`,
-        getCost: (lvl) => Math.floor(20 * Math.pow(1.4, lvl))
+        getCost: (lvl) => Math.floor(20 * Math.pow(1.3, lvl))
       },
       {
         id: "combo_book",
@@ -2861,7 +2861,7 @@
         desc: "2秒以内の即答(スピード回答)でダメージがさらに増加",
         getStatText: (lvl) => `即答ボーナス +${getStatValue('speed_feather', lvl)}%`,
         getNextText: (lvl) => `+${getStatDelta('speed_feather', lvl)}% 加算`,
-        getCost: (lvl) => Math.floor(80 * Math.pow(1.42, lvl))
+        getCost: (lvl) => Math.floor(80 * Math.pow(1.4, lvl))
       },
       {
         id: "crit_glove",
@@ -2871,7 +2871,7 @@
         desc: "正解時に一定確率で超強力な会心の一撃(ダメージ2倍)発動",
         getStatText: (lvl) => `会心発生率 ${getStatValue('crit_glove', lvl)}%`,
         getNextText: (lvl) => `+${getStatDelta('crit_glove', lvl)}% 発動率`,
-        getCost: (lvl) => Math.floor(100 * Math.pow(1.45, lvl))
+        getCost: (lvl) => Math.floor(100 * Math.pow(1.3, lvl))
       },
       {
         id: "overkill_crown",
@@ -2881,7 +2881,7 @@
         desc: "すべての攻撃ダメージに固定乗算倍率を追加 (+0.001固定)",
         getStatText: (lvl) => `全ダメージ +${(getStatValue('overkill_crown', lvl)).toFixed(3)}`,
         getNextText: (lvl) => `+0.001 加算`,
-        getCost: (lvl) => Math.floor(200 * Math.pow(1.5, lvl))
+        getCost: (lvl) => Math.floor(200 * Math.pow(1.3, lvl))
       }
     ];
 
