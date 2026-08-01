@@ -3159,7 +3159,7 @@
         desc: "ダンジョンモードでの基本攻撃力(ATK)をアップ",
         getStatText: (lvl) => `ATK ${getStatValue('weapon', lvl)}`,
         getNextText: (lvl) => `+${getStatDelta('weapon', lvl)} ATK`,
-        getCost: (lvl) => Math.floor(15 * Math.pow(1.3, lvl))
+        getCost: (lvl) => Math.floor(15 * Math.pow(1.21, lvl))
       },
       {
         id: "shield",
@@ -3169,7 +3169,7 @@
         desc: "制限時間を1レベル毎に固定で+1秒延長",
         getStatText: (lvl) => `+${getStatValue('shield', lvl)} 秒延長`,
         getNextText: (lvl) => `+1 秒延長`,
-        getCost: (lvl) => Math.floor(15 * Math.pow(1.35, lvl))
+        getCost: (lvl) => Math.floor(15 * Math.pow(1.3, lvl))
       },
       {
         id: "ring",
@@ -3179,7 +3179,7 @@
         desc: "苦手単語正解時のボーナスPTをUP",
         getStatText: (lvl) => `+${getStatValue('ring', lvl)} PT`,
         getNextText: (lvl) => `+${getStatDelta('ring', lvl)} PT`,
-        getCost: (lvl) => Math.floor(20 * Math.pow(1.3, lvl))
+        getCost: (lvl) => Math.floor(20 * Math.pow(1.19, lvl))
       },
       {
         id: "boots",
@@ -3199,7 +3199,7 @@
         desc: "コンボ(連続正解)時の攻撃倍率補正を強化 (+5%固定)",
         getStatText: (lvl) => `コンボ倍率 +${getStatValue('combo_book', lvl)}%`,
         getNextText: (lvl) => `+5% 加算`,
-        getCost: (lvl) => Math.floor(40 * Math.pow(1.35, lvl))
+        getCost: (lvl) => Math.floor(40 * Math.pow(1.3, lvl))
       },
       {
         id: "high_pendant",
@@ -3219,7 +3219,7 @@
         desc: "即答(スピード回答)でダメージ増加",
         getStatText: (lvl) => `即答ボーナス +${getStatValue('speed_feather', lvl)}%`,
         getNextText: (lvl) => `+${getStatDelta('speed_feather', lvl)}% 加算`,
-        getCost: (lvl) => Math.floor(80 * Math.pow(1.42, lvl))
+        getCost: (lvl) => Math.floor(80 * Math.pow(1.4, lvl))
       },
       {
         id: "crit_glove",
@@ -3229,7 +3229,7 @@
         desc: "正解時に一定確率で超強力な会心の一撃(ダメージ2倍)発動",
         getStatText: (lvl) => `会心発生率 ${getStatValue('crit_glove', lvl)}%`,
         getNextText: (lvl) => `+${getStatDelta('crit_glove', lvl)}% 発動率`,
-        getCost: (lvl) => Math.floor(100 * Math.pow(1.45, lvl))
+        getCost: (lvl) => Math.floor(100 * Math.pow(1.4, lvl))
       },
       {
         id: "overkill_crown",
