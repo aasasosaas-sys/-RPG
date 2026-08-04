@@ -3477,7 +3477,7 @@
       const nextLvl = currentLvl + 1;
       switch (id) {
         case 'weapon': return Math.floor(12 + Math.pow(nextLvl, 1.25) * 4);
-        case 'shield': return nextLvl <= 50 ? 1 : 0;
+        case 'shield': return nextLvl <= 100 ? 1 : 0;
         case 'ring': return Math.floor(5 + nextLvl * 3);
         case 'boots': return Math.floor(1 + Math.floor(nextLvl * 0.7));
         case 'combo_book': return 5;
